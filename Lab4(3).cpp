@@ -124,7 +124,6 @@ void Salon::run() {
             act = inputInt("Выбор действия: ");
             if (act == 0) break;
 
-            // ================= MAP =================
             if (choice == 1) {
                 if (act == 1) {
                     Service s = inputService();
@@ -176,7 +175,6 @@ void Salon::run() {
                 }
             }
 
-            // ================= SET =================
             else if (choice == 2) {
                 if (act == 1) {
                     Service s = inputService();
@@ -225,7 +223,6 @@ void Salon::run() {
                 }
             }
 
-            // ================= MULTIMAP =================
             else if (choice == 3) {
                 if (act == 1) {
                     string t; cout << "Тип процедуры (ключ): "; getline(cin, t);
@@ -275,7 +272,6 @@ void Salon::run() {
                 }
             }
 
-            // ================= MULTISET =================
             else if (choice == 4) {
                 if (act == 1) { Service s = inputService(); msData.insert(s); cout << "Услуга добавлена\n"; }
                 else if (act == 2) {
@@ -320,7 +316,6 @@ void Salon::run() {
                 }
             }
 
-            // ================= UNORDERED_MAP =================
             else if (choice == 5) {
                 if (act == 1) {
                     Service s = inputService();
@@ -366,7 +361,6 @@ void Salon::run() {
                 }
             }
 
-            // ================= UNORDERED_SET =================
             else if (choice == 6) {
                 if (act == 1) {
                     Service s = inputService();
@@ -415,7 +409,6 @@ void Salon::run() {
                 }
             }
 
-            // ================= UNORDERED_MULTIMAP =================
             else if (choice == 7) {
                 if (act == 1) {
                     int d = inputInt("Длительность (ключ): ");
@@ -464,7 +457,6 @@ void Salon::run() {
                 }
             }
 
-            // ================= UNORDERED_MULTISET =================
             else if (choice == 8) {
                 if (act == 1) { Service s = inputService(); umsData.insert(s); cout << "Услуга добавлена\n"; }
                 else if (act == 2) {
